@@ -1,0 +1,65 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <title>Restaurant App</title>
+  <link rel="stylesheet" href="mealdes.css">
+</head>
+<body>
+
+  <header>
+    <h1>Delicious Restaurant</h1>
+    <nav>
+      <ul>
+        <li><a href="#menu">Menu</a></li>
+        <li><a href="#booking">Book a Table</a></li>
+      </ul>
+    </nav>
+  </header>
+
+  <section id="hero">
+    <div class="hero-content">
+      <h2 id="welcomeText">Welcome to <span>Delicious</span> Restaurant</h2>
+      <p class="animated-text">Experience a world of flavors in every bite!</p>
+    </div>
+  </section>
+
+  <section id="menu">
+    <h2>Menu</h2>
+    <div id="app" class="card-container"></div>
+  </section>
+
+ <!-- ... (previous code) ... -->
+
+<section id="booking">
+    <h2>Table Booking</h2>
+    <button id="bookTableBtn">Book a Table</button>
+  </section>
+  
+  <div id="bookingFormContainer" class="hidden">
+    <form id="bookingForm">
+      <label for="guests">Number of Guests:</label>
+      <div class="form-field">
+        <input type="number" id="guests" name="guests" min="1" required>
+      </div>
+  
+      <label for="date">Date:</label>
+      <div class="form-field">
+        <input type="date" id="date" name="date" required>
+      </div>
+  
+      <button type="submit">Book Now</button>
+    </form>
+  </div>
+  
+  <!-- ... (remaining code) ... -->
+  
+
+  <footer>
+    <p>&copy; 2024 Delicious Restaurant</p>
+  </footer>
+
+  <script src="mealjav.js"></script>
+</body>
+</html>
